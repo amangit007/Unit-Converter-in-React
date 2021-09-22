@@ -4,7 +4,6 @@ import Header from './MyComponents/Header';
 import { Footer } from './MyComponents/Footer';
 import React from 'react';
 import { Menu } from './MyComponents/Menu';
-import Currency from './MyComponents/Currency';
 import {
   BrowserRouter as Router,
   Switch,
@@ -41,17 +40,7 @@ function App() {
           }}>
           </Route>
 
-          <Route exact path="/currency" render={() => {
-            return (
-              <>
-                <Header  search={false}  currlink='nav-link active' />
-                <Currency/>
-              </>
-            )
-          }}>
-
-          </Route>
-
+          
           <Route exact path="/convertit/:Str" render={(props) => {
                
             return (
